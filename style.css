@@ -1,0 +1,46 @@
+/* Universal */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: monospace;
+  
+}
+/* Body */
+.wrap {
+  background-color: magenta;
+  width: 80%;
+  margin: 0 auto;
+  padding: 10px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-areas:
+    "name lname"
+    "email email"
+    "message message"
+}
+
+input {
+  height: 30px;
+}
+
+.name {
+  grid-area: name;
+}
+
+.lName {
+   grid-area: lname;
+}
+
+.email {
+  grid-area: email;
+}
+
+.email input {
+  width: 100%;
+}
+
+.message {
+  grid-area: message;
+}
